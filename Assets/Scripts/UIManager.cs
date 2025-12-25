@@ -54,17 +54,16 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject quitDialogPanel; // Assign your dialog panel in the Inspector
     bool isQuitDialogActive = false;
 
-    public InputActionAsset inputActions;
-    public InputAction quitAction;
+    InputAction quitAction;
 
     void OnEnable()
     {
-        inputActions.FindActionMap("UI").Enable();
+        InputSystem.actions.FindActionMap("UI").Enable();
     }
 
     void OnDisable()
     {
-        inputActions.FindActionMap("UI").Disable();
+        InputSystem.actions.FindActionMap("UI").Disable();
     }
 
     void Awake()
