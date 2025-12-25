@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class UIManager : MonoBehaviour
 {
@@ -53,6 +54,24 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject quitDialogPanel; // Assign your dialog panel in the Inspector
     bool isQuitDialogActive = false;
 
+    public InputActionAsset inputActions;
+    public InputAction quitAction;
+
+    void OnEnable()
+    {
+        inputActions.FindActionMap("UI").Enable();
+    }
+
+    void OnDisable()
+    {
+        inputActions.FindActionMap("UI").Disable();
+    }
+
+    void Awake()
+    {
+        quitAction = InputSystem.actions.FindAction("Quit");
+    }
+
     void Start()
     {
         DataManager.LoadData(childManager);
@@ -61,7 +80,7 @@ public class UIManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) // Android back button maps to KeyCode.Escape
+        if (quitAction.WasPressedThisFrame()) // Android back button/keyboard escape
         {
             if (!isQuitDialogActive)
             {
