@@ -5748,7 +5748,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "ClassTracker \xA9 2025 DJ Doman. All rights reserved."
+  m_text: "ClassTracker \xA9 2026 DJ Doman"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a09c6ea0f2c6fa419d3348f63b1fe9f, type: 2}
   m_sharedMaterial: {fileID: -8026926434021027749, guid: 1a09c6ea0f2c6fa419d3348f63b1fe9f, type: 2}
