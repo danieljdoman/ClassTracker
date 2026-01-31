@@ -5,11 +5,11 @@ using UnityEngine;
 public class ChildManager : MonoBehaviour
 {
     // Child management
-    public List<Child> children = new List<Child>();
+    public List<Child> children = new();
 
     public void AddChild(string name)
     {
-        Child newChild = new Child { Name = name };
+        Child newChild = new() { Name = name };
         children.Add(newChild);
     }
 
@@ -19,11 +19,11 @@ public class ChildManager : MonoBehaviour
     }
 
     // Preset activity management
-    public List<Activity> presetActivities = new List<Activity>();
+    public List<Activity> presetActivities = new();
 
     public void AddPresetActivity(string description, string difficulty = "", string level = "")
     {
-        Activity newPreset = new Activity
+        Activity newPreset = new()
         {
             Description = description,
             Difficulty = difficulty,

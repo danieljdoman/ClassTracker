@@ -15,7 +15,5 @@ public class Activity
 public class Child
 {
     public string Name; // "John", "Alex", "Susan"
-    public List<Activity> Activities = new List<Activity>(); // List of activities captured for each child
+    public List<Activity> Activities = new(); // List of activities captured for each child
 }
-
-// Script is complete and functional. © 2025 DJ Doman.
