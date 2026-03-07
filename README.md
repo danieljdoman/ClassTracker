@@ -20,7 +20,7 @@ The app focuses on simple, offline-first usage with all data stored locally in J
 
 ## 🛠 Tech Stack
 
-- Unity 6.3 LTS (6000.3.10f1)
+- Unity 6.3 LTS
 - C#
 - Local JSON file storage
 
@@ -38,7 +38,7 @@ The app focuses on simple, offline-first usage with all data stored locally in J
 ### Requirements
 
 - Unity Hub
-- Unity **6.3 LTS (6000.3.10f1)**
+- Unity **6.3 LTS**
 - Android Build Support (installed via Unity Hub)
 - Android SDK & NDK (via Unity Hub)
 
