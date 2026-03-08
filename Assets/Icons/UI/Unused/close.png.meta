@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6662b37531191c84e8f951a74a2aa905
+guid: 589b64c0ee934394dba957710d402006
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2785425342715632595
-    second: ClassTracker Icon_0
+      213: -8542653549661865833
+    second: close_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ClassTracker Icon_0
+      name: close_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 500
-        height: 500
+        x: 27
+        y: 27
+        width: 74
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3db9fe46791d7a620800000000000000
-      internalID: 2785425342715632595
+      spriteID: 798bc258bd5627980800000000000000
+      internalID: -8542653549661865833
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ClassTracker Icon_0: 2785425342715632595
+      close_0: -8542653549661865833
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
