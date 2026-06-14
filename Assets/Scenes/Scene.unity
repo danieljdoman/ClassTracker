@@ -4891,7 +4891,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "ClassTracker \xA9 2026 DJ Doman"
+  m_text: "ClassTracker \xA9 2026 Daniel J. Doman"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a09c6ea0f2c6fa419d3348f63b1fe9f, type: 2}
   m_sharedMaterial: {fileID: -8026926434021027749, guid: 1a09c6ea0f2c6fa419d3348f63b1fe9f, type: 2}
@@ -7470,7 +7470,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -62.500015}
+  m_AnchoredPosition: {x: 0, y: -62.50006}
   m_SizeDelta: {x: 0, y: -125.00003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &962054126
