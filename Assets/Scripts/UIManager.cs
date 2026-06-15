@@ -7,31 +7,40 @@ using UnityEngine.InputSystem;
 
 public class UIManager : MonoBehaviour
 {
+    [Header("Scripts")]
     public ChildManager childManager;
 
+    [Header("Settings")]
     public GameObject settingsPanel;
 
+    [Header("Dashboard")]
     public GameObject dashboardPanel;
     public GameObject childListContainer; // The container for displaying children
     public GameObject childListItemPrefab; // A prefab for each child's list item
 
+    [Header("Add Child Panel")]
     public GameObject addChildPanel;
     public TMP_InputField childNameInput;
 
+    [Header("Child Details Panel")]
     public GameObject childDetailsPanel;
     public TMP_Text childNameText;
     public GameObject activityListContainer; // Content container for activities
     public GameObject activityListItemPrefab; // Prefab for each activity
     Child selectedChild;
 
+    [Header("Debug")]
     public TMP_Text debugText;
     Coroutine debugCoroutine;
 
+    [Header("Choose Activity Type Panel")]
     public GameObject chooseActivityTypePanel;
 
+    [Header("Preset Activity Selection Panel")]
     public GameObject presetActivitySelectionPanel; // Panel to show preset activity options
     public GameObject presetActivitySelectionListContainer;
 
+    [Header("Custom Activity Selection Panel")]
     public GameObject customActivitySelectionPanel; // Panel to add custom activity
     public TMP_InputField activityDescriptionInput;
     public TMP_Dropdown activityDifficultyDropdown;
@@ -39,6 +48,7 @@ public class UIManager : MonoBehaviour
 
     Activity selectedPresetActivity;
 
+    [Header("Preset Activities Panel")]
     public GameObject presetActivitiesPanel;
     public GameObject presetActivityListContainer; // Scroll View for presets
     public GameObject presetActivityItemPrefab; // Prefab for preset activity items
@@ -47,10 +57,12 @@ public class UIManager : MonoBehaviour
     public TMP_Dropdown presetActivityDifficultyDropdown;
     public TMP_InputField presetActivityLevelInput;
 
+    [Header("Note Prompt Panel")]
     public GameObject notePromptPanel; // UI panel for prompting a custom note
     public TMP_InputField noteInputField; // Input field for entering the note
     Activity pendingActivity; // Temporarily store the activity being added
 
+    [Header("Quit Dialog Panel")]
     [SerializeField] GameObject quitDialogPanel; // Assign your dialog panel in the Inspector
     bool isQuitDialogActive = false;
 
