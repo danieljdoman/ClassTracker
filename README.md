@@ -3,7 +3,7 @@
 ClassTracker is an Android tablet application for tracking children’s activities, levels, and notes.  
 It is designed for classroom or daycare-style environments (e.g. kindergarten), but can be adapted for other activity tracking scenarios.
 
-The app focuses on simple, offline-first usage with all data stored locally in JSON format.
+The app focuses on simple, offline usage with all data stored locally in JSON format.
 
 ---
 
@@ -14,7 +14,7 @@ The app focuses on simple, offline-first usage with all data stored locally in J
 - Track levels or progress per activity
 - Add notes for each activity
 - Tablet-friendly UI
-- Offline-first (no internet connection required)
+- Offline (no internet connection required)
 
 ---
 
