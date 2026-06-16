@@ -488,7 +488,7 @@ public class UIManager : MonoBehaviour
         debugCoroutine = StartCoroutine(DisplayDebugMessage(message));
     }
 
-    private IEnumerator DisplayDebugMessage(string message)
+    IEnumerator DisplayDebugMessage(string message)
     {
         debugText.text = message; // Set the debug message
         yield return new WaitForSeconds(3f); // Wait for 3 seconds
