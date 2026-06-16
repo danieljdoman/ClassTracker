@@ -641,6 +641,7 @@ GameObject:
   - component: {fileID: 4667989362197398749}
   - component: {fileID: 129019739716038787}
   - component: {fileID: 774050632291726740}
+  - component: {fileID: 6911898357124651418}
   m_Layer: 5
   m_Name: DeleteButton
   m_TagString: Untagged
@@ -749,6 +750,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6911898357124651418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7280617365623884433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ed04c07e42b0f4db7f0bed8c6bfbc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonSFX
+  audioName: Complete
 --- !u!1 &9029627589407980994
 GameObject:
   m_ObjectHideFlags: 0

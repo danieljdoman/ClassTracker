@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5339155051451757373}
   - component: {fileID: 1473387237085885153}
   - component: {fileID: 5359703691971802678}
+  - component: {fileID: 5565372296516217954}
   m_Layer: 5
   m_Name: DeleteButton
   m_TagString: Untagged
@@ -120,6 +121,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5565372296516217954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200360685958343777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ed04c07e42b0f4db7f0bed8c6bfbc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonSFX
+  audioName: Complete
 --- !u!1 &1445372222815982731
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,6 +283,7 @@ GameObject:
   - component: {fileID: 8120063639837197292}
   - component: {fileID: 4302731458028953108}
   - component: {fileID: 2693988906584137536}
+  - component: {fileID: 5706594789281976130}
   m_Layer: 5
   m_Name: ChildPrefab
   m_TagString: Untagged
@@ -379,3 +394,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5706594789281976130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6343052996703202871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ed04c07e42b0f4db7f0bed8c6bfbc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonSFX
+  audioName: Click
