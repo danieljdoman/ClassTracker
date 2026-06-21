@@ -307,8 +307,7 @@ PlayerSettings:
   m_BuildTargetPlatformIcons:
   - m_BuildTarget: Android
     m_Icons:
-    - m_Textures:
-      - {fileID: 2800000, guid: 1c8158c7d369a184191eb681cc1af7fc, type: 3}
+    - m_Textures: []
       m_Width: 192
       m_Height: 192
       m_Kind: 0
@@ -338,8 +337,7 @@ PlayerSettings:
       m_Height: 36
       m_Kind: 0
       m_SubKind: 
-    - m_Textures:
-      - {fileID: 2800000, guid: 1c8158c7d369a184191eb681cc1af7fc, type: 3}
+    - m_Textures: []
       m_Width: 192
       m_Height: 192
       m_Kind: 1
