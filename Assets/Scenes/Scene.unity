@@ -1622,7 +1622,7 @@ GameObject:
   - component: {fileID: 221941725}
   - component: {fileID: 221941726}
   m_Layer: 5
-  m_Name: DebugText
+  m_Name: StatusText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10545,7 +10545,7 @@ MonoBehaviour:
   childNameText: {fileID: 1226458227}
   activityListContainer: {fileID: 1724792095}
   activityListItemPrefab: {fileID: 5989925816826653944, guid: 4caa80f6e913c2e4096186e22db62942, type: 3}
-  debugText: {fileID: 221941726}
+  statusText: {fileID: 221941726}
   chooseActivityTypePanel: {fileID: 572525463}
   presetActivitySelectionPanel: {fileID: 2009765507}
   presetActivitySelectionListContainer: {fileID: 962054124}

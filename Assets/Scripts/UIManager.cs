@@ -29,9 +29,9 @@ public class UIManager : MonoBehaviour
     public GameObject activityListItemPrefab; // Prefab for each activity
     Child selectedChild;
 
-    [Header("Debug")]
-    public TMP_Text debugText;
-    Coroutine debugCoroutine;
+    [Header("Status")]
+    public TMP_Text statusText;
+    Coroutine statusCoroutine;
 
     [Header("Choose Activity Type Panel")]
     public GameObject chooseActivityTypePanel;
@@ -117,8 +117,7 @@ public class UIManager : MonoBehaviour
         string childName = childNameInput.text;
         if (string.IsNullOrEmpty(childName))
         {
-            Debug.LogWarning("Child name is required!");
-            ShowDebugMessage("Child name is required!");
+            ShowStatusMessage("Child name is required!");
             return;
         }
         else
@@ -271,7 +270,7 @@ public class UIManager : MonoBehaviour
     public void SelectPresetActivity(Activity activity)
     {
         selectedPresetActivity = activity; // Store the selected activity
-        ShowDebugMessage($"Selected preset: {activity.Description}");
+        ShowStatusMessage($"Selected preset: {activity.Description}");
         AddActivity();
     }
 
@@ -311,8 +310,7 @@ public class UIManager : MonoBehaviour
 
             if (string.IsNullOrEmpty(description))
             {
-                Debug.LogWarning("Activity description is required!");
-                ShowDebugMessage("Activity description is required!");
+                ShowStatusMessage("Activity description is required!");
                 return;
             }
 
@@ -372,8 +370,7 @@ public class UIManager : MonoBehaviour
 
         if (string.IsNullOrEmpty(description))
         {
-            Debug.LogWarning("Preset activity description is required!");
-            ShowDebugMessage("Preset activity description is required!");
+            ShowStatusMessage("Preset activity description is required!");
             return;
         }
 
@@ -476,23 +473,24 @@ public class UIManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void ShowDebugMessage(string message)
+    public void ShowStatusMessage(string message)
     {
-        // Stop any currently running debug message coroutine
-        if (debugCoroutine != null)
+        // Stop any currently running status message coroutine
+        if (statusCoroutine != null)
         {
-            StopCoroutine(debugCoroutine);
+            StopCoroutine(statusCoroutine);
         }
 
         // Start a new coroutine to display the message
-        debugCoroutine = StartCoroutine(DisplayDebugMessage(message));
+        statusCoroutine = StartCoroutine(DisplayStatusMessage(message));
     }
 
-    IEnumerator DisplayDebugMessage(string message)
+    IEnumerator DisplayStatusMessage(string message)
     {
-        debugText.text = message; // Set the debug message
+        Debug.Log(message);
+        statusText.text = message; // Set the status message
         yield return new WaitForSeconds(3f); // Wait for 3 seconds
-        debugText.text = ""; // Clear the text
-        debugCoroutine = null; // Reset the coroutine reference
+        statusText.text = ""; // Clear the text
+        statusCoroutine = null; // Reset the coroutine reference
     }
 }
